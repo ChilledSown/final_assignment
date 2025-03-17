@@ -1,0 +1,179 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Nguyen Van An",
+      "username": "nguyenvanan",
+      "password": "123",
+      "gender": "Nam",
+      "email": "nguyenvanan@gmail.com",
+      "role": "user"
+    },
+    {
+      "id": "2",
+      "name": "Trần Thị Bích",
+      "username": "tranthibich",
+      "password": "123456",
+      "gender": "Nữ",
+      "email": "tranthibich@gmail.com",
+      "role": "user"
+    },
+    {
+      "id": "3",
+      "name": "Lê Văn Cường",
+      "username": "levancuong",
+      "password": "123456",
+      "gender": "Nam",
+      "email": "levancuong@gmail.com",
+      "role": "user"
+    },
+    {
+      "id": "4",
+      "name": "Phạm Thị Dung",
+      "username": "phamthidung",
+      "password": "123456",
+      "gender": "Nữ",
+      "email": "phamthidung@gmail.com",
+      "role": "user"
+    },
+    {
+      "id": "5",
+      "name": "Hoàng Văn Dũng",
+      "username": "hoangvandung",
+      "password": "123456",
+      "gender": "Nam",
+      "email": "hoangvandung@gmail.com",
+      "role": "user"
+    },
+    {
+      "id": "6",
+      "name": "Nguyễn Thị Hồng",
+      "username": "nguyenthihong",
+      "password": "123456",
+      "gender": "Nữ",
+      "email": "nguyenthihong@gmail.com",
+      "role": "user"
+    },
+    {
+      "id": "7",
+      "name": "Đặng Văn Hòa",
+      "username": "dangvanhoa",
+      "password": "123456",
+      "gender": "Nam",
+      "email": "dangvanhoa@gmail.com",
+      "role": "user"
+    },
+    {
+      "id": "8",
+      "name": "Phan Thị Huyền",
+      "username": "phanthihuyen",
+      "password": "123456",
+      "gender": "Nữ",
+      "email": "phanthihuyen@gmail.com",
+      "role": "user"
+    },
+    {
+      "id": "9",
+      "name": "Vũ Văn Khánh",
+      "username": "vuvankhanh",
+      "password": "123456",
+      "gender": "Nam",
+      "email": "vuvankhanh@gmail.com",
+      "role": "user"
+    },
+    {
+      "id": "10",
+      "name": "Bùi Thị Lan",
+      "username": "buithilan",
+      "password": "123456",
+      "gender": "Nữ",
+      "email": "buithilan@gmail.com",
+      "role": "user"
+    },
+    {
+      "id": "11",
+      "name": "Admin Master",
+      "username": "admin",
+      "password": "123",
+      "gender": "Nam",
+      "email": "adminmaster@gmail.com",
+      "role": "admin"
+    }
+  ],
+  "newspapers": [
+    [
+      {
+        "id": 1,
+        "author": "Admin Master",
+        "title": "Top 5 cầu thủ xuất sắc nhất năm 2024",
+        "description": "Năm 2024 chứng kiến sự bùng nổ của nhiều tài năng bóng đá trên toàn cầu. Trong danh sách này, những cái tên như Lionel Messi, Cristiano Ronaldo, Kylian Mbappe, Erling Haaland và Kevin De Bruyne đều để lại dấu ấn đậm nét. Họ không chỉ là ngôi sao sáng trên sân cỏ mà còn là hình mẫu trong lối sống chuyên nghiệp, sự tận tâm với bóng đá và tinh thần đồng đội đáng ngưỡng mộ. Thành tích ấn tượng của họ tại các giải đấu lớn như World Cup, UEFA Champions League hay Ngoại hạng Anh đã giúp họ khẳng định vị thế vững chắc trong lòng người hâm mộ. Bài viết này sẽ phân tích từng cầu thủ, thành tích nổi bật và lý do họ xứng đáng có mặt trong danh sách này.",
+        "category": "Thể thao",
+        "published_date": "2024-03-01",
+        "image_url": "https://example.com/sport1.jpg"
+      },
+      {
+        "id": 2,
+        "author": "Admin Master",
+        "title": "Sự kiện thể thao lớn nhất năm 2024",
+        "description": "Năm 2024 hứa hẹn sẽ là năm đầy sôi động với hàng loạt sự kiện thể thao lớn được tổ chức trên toàn cầu. Các sự kiện như Thế vận hội Mùa hè, Giải vô địch bóng đá châu Âu (Euro), Giải vô địch bóng đá Nam Mỹ (Copa America) và các giải đấu e-sport lớn đang được người hâm mộ háo hức mong đợi. Ngoài ra, các giải đấu quốc nội như Ngoại hạng Anh, La Liga, Serie A cũng hứa hẹn mang đến nhiều trận cầu mãn nhãn với sự cạnh tranh khốc liệt giữa các đội bóng hàng đầu. Người hâm mộ sẽ có cơ hội chứng kiến những màn trình diễn đỉnh cao từ các vận động viên tài năng trên toàn thế giới.",
+        "category": "Thể thao",
+        "published_date": "2024-03-05",
+        "image_url": "https://example.com/sport2.jpg"
+      },
+      {
+        "id": 3,
+        "author": "Admin Master",
+        "title": "Chiến lược phát triển kinh tế 2024",
+        "description": "Trong bối cảnh thế giới đang trải qua những biến động kinh tế lớn, việc xây dựng các chiến lược phát triển kinh tế hiệu quả trở nên quan trọng hơn bao giờ hết. Năm 2024, chính phủ nhiều quốc gia đã đưa ra các chính sách kinh tế mới nhằm thúc đẩy tăng trưởng bền vững, ổn định thị trường tài chính và tạo thêm nhiều cơ hội việc làm. Các ngành công nghiệp trọng điểm như công nghệ, năng lượng tái tạo và dịch vụ tài chính đang được đầu tư mạnh mẽ. Đặc biệt, xu hướng chuyển đổi số và ứng dụng trí tuệ nhân tạo được đánh giá là động lực quan trọng giúp nền kinh tế tăng trưởng vượt bậc trong năm nay.",
+        "category": "Chính trị",
+        "published_date": "2024-02-15",
+        "image_url": "https://example.com/politics1.jpg"
+      },
+      {
+        "id": 4,
+        "author": "Admin Master",
+        "title": "Giải đấu e-sport đình đám 2024",
+        "description": "Năm 2024 được dự đoán là năm bùng nổ của ngành công nghiệp e-sport với hàng loạt giải đấu quy mô toàn cầu. Các giải đấu lớn như League of Legends World Championship, Dota 2 The International hay CS:GO Major Championship đều thu hút sự quan tâm đặc biệt từ cộng đồng game thủ. Những đội tuyển hàng đầu như T1, G2 Esports hay Team Spirit đã chuẩn bị kỹ lưỡng với đội hình mạnh mẽ cùng chiến thuật tối ưu nhất. Các giải đấu năm nay không chỉ mang đến những trận đấu căng thẳng mà còn là cơ hội để các tài năng trẻ khẳng định bản thân trên đấu trường quốc tế.",
+        "category": "E-sport",
+        "published_date": "2024-01-20",
+        "image_url": "https://example.com/esport1.jpg"
+      },
+      {
+        "id": 5,
+        "author": "Admin Master",
+        "title": "Mẹo chăm sóc sức khỏe mùa đông",
+        "description": "Mùa đông là thời điểm dễ phát sinh các vấn đề sức khỏe như cảm lạnh, cúm hay da khô. Để bảo vệ sức khỏe tốt nhất, các chuyên gia khuyên rằng nên giữ ấm cơ thể bằng cách mặc nhiều lớp áo, bổ sung thực phẩm giàu vitamin C để tăng cường hệ miễn dịch. Ngoài ra, việc duy trì chế độ sinh hoạt lành mạnh, tập thể dục đều đặn và giữ cho không gian sống thoáng đãng cũng giúp cơ thể khỏe mạnh hơn trong mùa đông. Bài viết này sẽ hướng dẫn bạn các mẹo đơn giản nhưng hiệu quả để chăm sóc sức khỏe trong mùa đông một cách toàn diện nhất.",
+        "category": "Đời sống",
+        "published_date": "2024-01-10",
+        "image_url": "https://example.com/life1.jpg"
+      },
+      {
+        "id": 6,
+        "author": "Admin Master",
+        "title": "Xu hướng công nghệ năm 2024",
+        "description": "Năm 2024 đánh dấu sự phát triển mạnh mẽ của các công nghệ tiên tiến như trí tuệ nhân tạo (AI), Internet vạn vật (IoT) và thực tế ảo (VR). Các tập đoàn công nghệ lớn như Google, Microsoft và Apple đều đã tung ra những sản phẩm ứng dụng AI thông minh, hỗ trợ người dùng trong nhiều lĩnh vực khác nhau. Đặc biệt, xu hướng ứng dụng AI vào chăm sóc sức khỏe, giáo dục và thương mại điện tử đang trở thành điểm nhấn nổi bật. Ngoài ra, công nghệ blockchain cũng tiếp tục mở rộng, mang lại tính bảo mật cao hơn trong các giao dịch tài chính. Trong bài viết này, chúng ta sẽ cùng khám phá chi tiết các xu hướng công nghệ đang định hình thế giới hiện đại.",
+        "category": "Công nghệ",
+        "published_date": "2024-02-28",
+        "image_url": "https://example.com/technology1.jpg"
+      },
+      {
+        "id": 7,
+        "author": "Admin Master",
+        "title": "Các giải pháp bảo vệ môi trường hiệu quả",
+        "description": "Biến đổi khí hậu và ô nhiễm môi trường đang trở thành mối quan tâm hàng đầu của thế giới. Trong năm 2024, các tổ chức quốc tế đã đưa ra nhiều giải pháp nhằm giảm thiểu tác động tiêu cực đến môi trường. Việc áp dụng năng lượng tái tạo như điện mặt trời, điện gió và xe điện đang trở thành xu hướng phổ biến. Ngoài ra, việc nâng cao nhận thức cộng đồng về tái chế rác thải và giảm sử dụng nhựa dùng một lần cũng đóng vai trò quan trọng. Các chuyên gia môi trường khuyến nghị rằng việc kết hợp giữa chính sách nhà nước, hành động doanh nghiệp và ý thức cộng đồng sẽ mang lại hiệu quả lâu dài trong việc bảo vệ hành tinh xanh của chúng ta.",
+        "category": "Môi trường",
+        "published_date": "2024-03-10",
+        "image_url": "https://example.com/environment1.jpg"
+      },
+      {
+        "id": 8,
+        "author": "Admin Master",
+        "title": "Tầm quan trọng của thể thao đối với sức khỏe",
+        "description": "Tập thể dục và tham gia các hoạt động thể thao không chỉ giúp cơ thể khỏe mạnh mà còn cải thiện tinh thần một cách hiệu quả. Theo các chuyên gia y tế, việc duy trì thói quen vận động ít nhất 30 phút mỗi ngày có thể giúp giảm nguy cơ mắc các bệnh tim mạch, tiểu đường và béo phì. Các môn thể thao như bơi lội, yoga và chạy bộ đang ngày càng được nhiều người lựa chọn bởi tính linh hoạt và phù hợp với mọi độ tuổi. Ngoài ra, tham gia thể thao còn giúp tăng cường giao tiếp xã hội, giảm căng thẳng và cải thiện chất lượng giấc ngủ. Vì vậy, hãy dành thời gian để vận động hàng ngày nhằm duy trì một cơ thể khỏe mạnh và tinh thần sảng khoái.",
+        "category": "Thể thao",
+        "published_date": "2024-01-30",
+        "image_url": "https://example.com/sport3.jpg"
+      }
+    ]
+  ]
+}

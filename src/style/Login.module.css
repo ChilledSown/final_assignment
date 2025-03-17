@@ -104,6 +104,9 @@ input:focus {
 .error.show {
     visibility: visible;
 }
-
+.success{
+    color: green;
+    text-align: center;
+}
 
 

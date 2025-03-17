@@ -6,6 +6,7 @@ import ForgotPassword from './pages/ForgotPassword';
 import AdminDashboard from './pages/AdminDashboard';
 import Home from './pages/Home' 
 import PageNotFound from './pages/PageNotFound';
+import ResetPassword from './pages/ResetPassword';
 function App() {
   const [isLogin, setIsLogin] = useState(false);
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/forgot-password' element={<ForgotPassword></ForgotPassword>}></Route>
         <Route path='/admin-dashboard' element={<AdminDashboard></AdminDashboard>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
+        <Route path='/reset-password/:id' element={<ResetPassword></ResetPassword>}></Route>
         <Route path='/*' element={<PageNotFound></PageNotFound>}></Route>
       </Routes>
     </Router>

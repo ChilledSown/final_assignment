@@ -1,13 +1,42 @@
-import users from "../data/users.json"
-
+import axios from "axios";
+const userAPI = "http://localhost:3001/users"
 export const getUsers = async () => {
-    const storedUsers = JSON.parse(localStorage.getItem("users")) || [];
-    return storedUsers;
+    try{
+        const res = await axios.get(userAPI);
+        return res.data
+    }catch(error){
+        console.log(error)
+    }
 };
 
 export const addUsers = async (newUser) => {
-    const storedUsers = await getUsers();
-    storedUsers.push(newUser);
-    localStorage.setItem("users", JSON.stringify(storedUsers));
-    return storedUsers;
+    try{
+        const res = await axios.post(userAPI, newUser);
+        return res.data
+    }catch(error){
+        console.log(error)
+    }
 };
+
+export const checkEmailExist = async (email) => {
+    if (!email) return false;
+    try {
+        const res = await axios.get(`${userAPI}?email=${email}`); 
+        return res.data.length > 0 ? res.data[0] : false;
+    } catch (error) {
+        console.error(error);
+        return false;
+    }
+}
+
+export const resetPassword = async (id, newPassword) => {
+    try {
+        const res = await axios.patch(`${userAPI}/${id}`, { password: newPassword });
+        return res.data;
+    } catch (error) {
+        console.error(error);
+        throw error;
+    }
+}
+
+

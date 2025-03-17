@@ -28,6 +28,10 @@ const Login = () => {
   const handleRegister = () => {
     navigate("/register");
   }
+  const handleForgotPassword = () => {
+    navigate("/forgot-password")
+  }
+  console.log(users)
   return (
     <div className={styles["login-container"]}>
     <div className={styles["login-box"]}>
@@ -56,8 +60,8 @@ const Login = () => {
         <button type="submit" className={styles["login-btn"]} onClick={handleLogin}>
           Đăng nhập
         </button>
-        {error && <p className={styles["error"]}>{error}</p>}
-        <p className={styles["forgot-password"]}>Quên mật khẩu?</p>
+        {error && <p className={`${styles.error} ${styles.show}`}>{error}</p>}
+        <p className={styles["forgot-password"]} onClick={handleForgotPassword}>Quên mật khẩu?</p>
         <p className={styles["forgot-password"]} onClick={handleRegister}>
           Chưa có tài khoản? Đăng ký ngay
         </p>
