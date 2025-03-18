@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    background: white;
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -16,6 +16,9 @@ body {
     width: 100%;
     max-width: 450px; 
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+    position: relative;
+    right: 35px;
+    bottom: 10px;
 }
 
 .login-box h2 {
