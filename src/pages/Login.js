@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import styles from "../style/Login.module.css";
 import { getUsers } from "../services/Users";
 import { useNavigate } from "react-router";
 const Login = () => {
@@ -33,39 +32,30 @@ const Login = () => {
   }
   console.log(users)
   return (
-    <div className={styles["login-container"]}>
-    <div className={styles["login-box"]}>
-      <h2>Đăng nhập</h2>
-      <form>
-        <div className={styles["form-group"]}>
-          <label htmlFor="username">Tên tài khoản</label>
-          <input
-            type="text"
-            id="username"
-            placeholder="Nhập tên tài khoản của bạn"
-            onChange={(e) => setUsername(e.target.value)}
-            required
-          />
+    <div className="auth-page">
+    <div className="container page">
+      <div className="row">
+        <div className="col-md-6 offset-md-3 col-xs-12">
+          <h1 className="text-xs-center">Sign in</h1>
+          <p className="text-xs-center">
+            <a href="/register">Need an account?</a>
+          </p>
+  
+          <ul className="error-messages">
+            <li>That email is already taken</li>
+          </ul>
+  
+          <form>
+            <fieldset className="form-group">
+              <input className="form-control form-control-lg" type="text" placeholder="Email" />
+            </fieldset>
+            <fieldset className="form-group">
+              <input className="form-control form-control-lg" type="password" placeholder="Password" />
+            </fieldset>
+            <button className="btn btn-lg btn-primary pull-xs-right">Sign in</button>
+          </form>
         </div>
-        <div className={styles["form-group"]}>
-          <label htmlFor="password">Mật khẩu</label>
-          <input
-            type="password"
-            id="password"
-            placeholder="Nhập mật khẩu của bạn"
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-        </div>
-        <button type="submit" className={styles["login-btn"]} onClick={handleLogin}>
-          Đăng nhập
-        </button>
-        {error && <p className={`${styles.error} ${styles.show}`}>{error}</p>}
-        <p className={styles["forgot-password"]} onClick={handleForgotPassword}>Quên mật khẩu?</p>
-        <p className={styles["forgot-password"]} onClick={handleRegister}>
-          Chưa có tài khoản? Đăng ký ngay
-        </p>
-      </form>
+      </div>
     </div>
   </div>
   );

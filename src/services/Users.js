@@ -1,8 +1,20 @@
 import axios from "axios";
 const userAPI = "http://localhost:3001/users"
-export const getUsers = async () => {
+
+export const loginUser = async (loginData) => {
     try{
-        const res = await axios.get(userAPI);
+        const res = await axios.post(`${userAPI}/login`, loginData);
+        return res.data;
+    }catch(error){
+        console.error(error)
+    }
+}
+
+export const getUsers = async (token) => {
+    try{
+        const res = await axios.get(userAPI, {
+            headers: {Authorization: `Token: ${token}`}
+        });
         return res.data
     }catch(error){
         console.log(error)
@@ -26,6 +38,17 @@ export const checkEmailExist = async (email) => {
     } catch (error) {
         console.error(error);
         return false;
+    }
+}
+
+export const updatePassword = async (userData, token) => {
+    try{
+        const res = await axios.put(userAPI, userData, {
+            headers: {Authorization: `Token: ${token}`}
+        })
+        return res.data;
+    }catch(error){
+        console.error(error);
     }
 }
 
