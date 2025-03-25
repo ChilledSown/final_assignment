@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import styles from "../style/Register.module.css";
 import { useNavigate } from "react-router";
 import { toast } from "react-toastify";
 import { getUsers, addUsers } from "../services/Users";
@@ -49,48 +48,35 @@ const Register = () => {
     };
 
     return (
-        <div className={styles["register-container"]}>
-            <div className={styles["register-box"]}>
-                <h2>Đăng ký</h2>
-                <form onSubmit={handleRegister}>
-                    {['name', 'username', 'password', 'email'].map((field) => (
-                        <div key={field} className={styles["form-group"]}>
-                            <label htmlFor={field}>
-                                {field === "name" ? "Tên" :
-                                field === "username" ? "Tên đăng nhập" :
-                                field === "password" ? "Mật khẩu" : "Email"}
-                            </label>
-                            <input
-                                type={field === "password" ? "password" : "text"}
-                                id={field}
-                                name={field}
-                                placeholder={`Nhập ${
-                                    field === "name" ? "tên" :
-                                    field === "username" ? "tên đăng nhập" :
-                                    field === "password" ? "mật khẩu" : "email"
-                                }`}
-                                onChange={handleChange}
-                                required
-                            />
-                        </div>
-                    ))}
+        <div className="auth-page">
+  <div className="container page">
+    <div className="row">
+      <div className="col-md-6 offset-md-3 col-xs-12">
+        <h1 className="text-xs-center">Sign up</h1>
+        <p className="text-xs-center">
+          <a href="/login">Have an account?</a>
+        </p>
 
-                    <div className={styles["form-group"]}>
-                        <label htmlFor="gender">Giới tính</label>
-                        <select id="gender" name="gender" onChange={handleChange} required>
-                            <option value="">Chọn giới tính</option>
-                            <option value="Nam">Nam</option>
-                            <option value="Nữ">Nữ</option>
-                        </select>
-                    </div>
+        <ul className="error-messages">
+          <li>That email is already taken</li>
+        </ul>
 
-                    <button type="submit" className={styles["register-btn"]}>
-                        Đăng ký
-                    </button>
-                    {error && <p className={styles.error}>{error}</p>}
-                </form>
-            </div>
-        </div>
+        <form>
+          <fieldset className="form-group">
+            <input className="form-control form-control-lg" type="text" placeholder="Username" />
+          </fieldset>
+          <fieldset className="form-group">
+            <input className="form-control form-control-lg" type="text" placeholder="Email" />
+          </fieldset>
+          <fieldset className="form-group">
+            <input className="form-control form-control-lg" type="password" placeholder="Password" />
+          </fieldset>
+          <button className="btn btn-lg btn-primary pull-xs-right">Sign up</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
     );
 };
 
